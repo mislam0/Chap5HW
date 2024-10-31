@@ -1,3 +1,14 @@
+/**Class: PoemWriter
+ * @author Mohammed Islam
+ * @version 1.0
+ * Course: ITEC 2150 Fall 2024
+ * Written: October 29th, 2024
+ *
+ * This class creates three poem objects, assigns each a name and poet,and writes the
+ * names and poets to a text file
+ */
+
+
 import java.io.PrintWriter;
 import java.io.FileNotFoundException;
 
@@ -15,7 +26,7 @@ public class PoemWriter {
         poem3.setName("Stopping by Woods on a Snowy Evening");
         poem3.setPoet("Robert Frost");
 
-        try (PrintWriter writer = new PrintWriter("poems.txt")) {
+        try (PrintWriter writer = new PrintWriter("src/poems.txt")) {
             writer.println(poem1.getName());
             writer.println(poem1.getPoet());
             writer.println(poem2.getName());
